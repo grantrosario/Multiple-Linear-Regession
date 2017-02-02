@@ -33,3 +33,8 @@ X_train = sc_X.fit_transform(X_train)
 X_test = sc_X.transform(X_test)
 sc_Y = StandardScaler()
 Y_train = sc_Y.fit_transform(Y_train)"""
+
+# Fitting Multiple Linear Regression to the Training Set
+from sklearn.linear_model import LinearRegression
+regressor = LinearRegression()
+regressor.fit(X_train, Y_train)
